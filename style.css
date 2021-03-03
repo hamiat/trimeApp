@@ -1,0 +1,46 @@
+:root {
+    --primary: red; 
+    --secondary: green;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** header ***/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    
+}
+
+nav {
+    grid-column: 1 /span 8;
+    grid-row: 1;
+    
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    height: 44px;
+    align-items: center;
+    margin: 0 9px;
+}
+
+ul li{
+    margin: 0 5px;
+}
+
+ .statusBarIcons { 
+    margin-left: auto;    
+}
+
+
+menu {
+    grid-column: 8 / span 1;
+    grid-row: 2;
+}
