@@ -1,53 +1,51 @@
 :root {
-    --primary: red; 
-    --secondary: green;
+  --primary: red;
+  --secondary: green;
 }
 
 @font-face {
-    font-family: 'SF-Pro';
-    src: url(/assets/FontsFree-Net-SFProText-Regular.ttf);
+  font-family: "SF-Pro";
+  src: url(/assets/FontsFree-Net-SFProText-Regular.ttf);
 }
 
 * {
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*** header ***/
 .grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 10px;
-    
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
 }
 
 nav {
-    grid-column: 1 /span 8;
-    grid-row: 1;
-    
+  grid-column: 1 / span 8;
+  grid-row: 1;
 }
 
 ul {
-    display: flex;
-    list-style: none;
-    height: 44px;
-    align-items: center;
-    margin: 0 9px;
+  display: flex;
+  list-style: none;
+  height: 44px;
+  align-items: center;
+  margin: 0 10px;
 }
 
-ul li{
-    margin: 0 5px;
-    font-family: Sf-Pro;
-    font-weight: 600;
+ul li {
+  margin: 0 5px;
+  font-family: Sf-Pro;
+  font-weight: 600;
 }
 
- .statusBarIcons { 
-    margin-left: auto;    
+.statusBarIcons {
+  margin-left: auto;
 }
 
 /* ham menu */
 menu {
-    grid-column: 8 / span 1;
-    grid-row: 2;
+  grid-column: 8 / span 1;
+  grid-row: 2;
 }
