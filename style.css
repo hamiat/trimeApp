@@ -3,6 +3,11 @@
     --secondary: green;
 }
 
+@font-face {
+    font-family: 'SF-Pro';
+    src: url(/assets/FontsFree-Net-SFProText-Regular.ttf);
+}
+
 * {
     margin: 0; 
     padding: 0;
@@ -33,13 +38,15 @@ ul {
 
 ul li{
     margin: 0 5px;
+    font-family: Sf-Pro;
+    font-weight: 600;
 }
 
  .statusBarIcons { 
     margin-left: auto;    
 }
 
-
+/* ham menu */
 menu {
     grid-column: 8 / span 1;
     grid-row: 2;
