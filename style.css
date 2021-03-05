@@ -14,11 +14,15 @@
   box-sizing: border-box;
 }
 
-/*** header ***/
+body{
+  height: 100vh;
+}
+
+/* header */
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 10px;
+  grid-template-rows: auto;
 }
 
 nav {
@@ -44,8 +48,75 @@ ul li {
   margin-left: auto;
 }
 
-/* ham menu */
-menu {
+.hamburgerMenuIcon {
   grid-column: 8 / span 1;
   grid-row: 2;
 }
+
+.hamburgerMenu {
+  grid-column: 4 / span 5;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  z-index: 1;
+  background-color: aquamarine;
+  overflow: hidden;
+
+
+}
+
+.topHamMenuColorShapes {
+  grid-column: 5 / span 3;
+  grid-row: 1;
+  margin-top: -120px;
+}
+
+.notificationIcon {
+  grid-column: 8 / span 1;
+  grid-row: 1;
+  z-index: 2;
+  margin: 16px 16px 0 0;
+  
+}
+
+.trainerProfileHamMenu{
+  grid-column: 1 / span 7;
+  grid-row: 1;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trainerNameHamMenu{
+  display: inline-block;
+}
+
+.hamburgerMenu ul{
+  grid-column: 2 / span 6;
+  grid-row: 2;
+  background-color: aqua;
+  display: inline-block;
+}
+
+.hamburgerMenu ul li {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.trimeTextLogoHamMenu {
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  height: 38px;
+}
+
+.linkHamMenu{ 
+  grid-column: 3 / span 2;
+  grid-row: 4;
+  height: 236px;
+}
+
