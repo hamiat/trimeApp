@@ -1,11 +1,17 @@
 :root {
-  --primary: red;
+  --primary: rgba(62, 0, 128, 1);
   --secondary: green;
 }
 
 @font-face {
   font-family: "SF-Pro";
   src: url(/assets/FontsFree-Net-SFProText-Regular.ttf);
+  src: url(/assets/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 * {
@@ -14,7 +20,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   height: 100vh;
 }
 
@@ -51,19 +57,29 @@ ul li {
 .hamburgerMenuIcon {
   grid-column: 8 / span 1;
   grid-row: 2;
+  cursor: pointer;
 }
+
+/*collapsable hamburger menu */
 
 .hamburgerMenu {
   grid-column: 4 / span 5;
   grid-row: 3;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   z-index: 1;
-  background-color: aquamarine;
+  background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
+  height: 100%;
+  /* display: none; */
+}
 
+.openMenu {
+  display: none;
+}
 
+.closeMenu {
+  background-color: red;
 }
 
 .topHamMenuColorShapes {
@@ -77,10 +93,9 @@ ul li {
   grid-row: 1;
   z-index: 2;
   margin: 16px 16px 0 0;
-  
 }
 
-.trainerProfileHamMenu{
+.trainerProfileHamMenu {
   grid-column: 1 / span 7;
   grid-row: 1;
   z-index: 2;
@@ -89,34 +104,89 @@ ul li {
   justify-content: center;
 }
 
-.trainerNameHamMenu{
+.trainerNameHamMenu {
   display: inline-block;
+  margin-left: 18px;
 }
 
-.hamburgerMenu ul{
-  grid-column: 2 / span 6;
+#trainerName {
+  font-size: 20px;
+  font-family: SF-Pro;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+#trainerUsername {
+  font-size: 12px;
+  font-family: SF-Pro;
+  color: rgba(154, 154, 154, 1);
+  font-weight: 500;
+}
+
+.hamburgerMenu ul {
+  grid-column: 1 / span 8;
   grid-row: 2;
-  background-color: aqua;
   display: inline-block;
+  height: 100%;
+  width: 213px;
+  margin-top: -35px;
+  cursor: pointer;
+  place-self: center;
 }
 
 .hamburgerMenu ul li {
-  height: 40px;
+  height: 53px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: right;
+  width: 100%;
+  border-bottom: 0.3px solid rgba(199, 162, 237, 0.5);
+  color: var(--primary);
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
 }
 
+.hamburgerMenu ul img {
+  margin-right: 37px;
+}
 
 .trimeTextLogoHamMenu {
-  grid-column: 3 / span 2;
+  grid-column: 1 / span 8;
   grid-row: 3;
   height: 38px;
+  width: 96px;
+  margin: 27px auto;
 }
 
-.linkHamMenu{ 
-  grid-column: 3 / span 2;
+.linkHamMenu {
+  grid-column: 1 / span 8;
   grid-row: 4;
-  height: 236px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: SF-Pro;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  background: rgba(205, 173, 239, 1);
 }
 
+.linkHamMenu p {
+  margin: 13px 0;
+  cursor: pointer;
+}
+
+.linkHamMenu button {
+  margin: 15px 0 25px 0;
+  width: 167px;
+  height: 46px;
+  font-family: SF-Pro;
+  font-weight: 700;
+  color: white;
+  background: rgba(205, 173, 239, 1);
+  border: 2px solid #3e0080;
+  border-radius: 15px;
+  cursor: pointer;
+}
