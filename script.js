@@ -1,21 +1,18 @@
-let hamMenuBtn = document.getElementById('hamMenuIcon');
-let hamMenu = document.getElementById('hamMenu');
+let hamMenu = document.getElementById("hamMenu");
+let hamMenuBtn = document.getElementById("hamMenuIcon");
+let mainBody = document.getElementById("mainBody");
+let footerBody = document.getElementById("footerBody");
 
-hamMenuBtn.addEventListener('click', expandMenu);
-
+hamMenuBtn.addEventListener("click", expandMenu);
 
 function expandMenu() {
-    hamMenu.classList.toggle("openMenu");
-    hamMenuBtn.classList.toggle("closeMenu");
-
+  if (hamMenu.style.display === "none") {
+    hamMenu.style.display = "grid";
+    mainBody.style.opacity = "0.5";
+    footerBody.style.opacity = "0.5";
+  } else {
+    hamMenu.style.display = "none";
+    mainBody.style.opacity = "1";
+    footerBody.style.opacity = "1";
+  }
 }
-
-/* document.addEventListener('click', closeMenu);
-
-function closeMenu() {
-    if (hamMenu.style.display = "grid") {
-        hamMenu.style.display = "none"
-    }
-      
-        } 
- */
