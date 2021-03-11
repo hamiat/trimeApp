@@ -1,0 +1,324 @@
+@font-face {
+  font-family: "SF-Pro";
+  src: url(/assets/FontsFree-Net-SFProText-Regular.ttf);
+  src: url(/assets/FontsFree-Net-SFProDisplay-Regular.ttf);
+  src: url(/assets/FontsFree-Net-SFProDisplay-Bold.ttf);
+  src: url(/assets/FontsFree-Net-SFProDisplay-Black.ttf);
+  
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+   
+    --lightPurple: #AD45D3;
+    --darkPurple: #6622D6;
+
+
+  }
+
+a{
+  text-decoration: none;
+  color:#6622D6;
+}
+
+  button 
+  {
+      border-style: none;
+      cursor: pointer;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      outline: 0;
+      text-decoration: none;
+      z-index: 2;
+    }
+  button:hover{
+   opacity: 0.4;
+  }
+
+  main{
+    position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       
+  }
+
+  #circleContainer{
+    position: relative;
+    width :414px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--lightPurple) 0%,var(--darkPurple));
+    overflow-x: hidden;
+  }
+
+  .outerCircle{
+    position: absolute;
+    height: 530px;
+    width: 529px;
+    left: -59px;
+    top: -16px;
+    background: linear-gradient(180deg, rgba(173, 76, 214, 0.7) 0%, rgba(106, 36, 214, 0.7) 100%);
+    border-radius: 100%;
+ 
+  }
+
+  .middleCircle{
+    position: absolute;
+    height: 450px;
+    width: 449px;
+    left: -19px;
+    top: 24px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #AB53D9 0%, #9743DA 51.04%, #8333DB 100%);
+
+  }
+
+  .innerCircle{
+    position: absolute;
+    height: 379px;
+    width: 377px;
+    left: 17px;
+    top: 59px;
+    border-radius: 100%;
+    background: #B781E8; 
+  }
+
+  .rectangle{
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    left: 75px;
+    top: 120px;
+    background: #7429D6 30%;
+    background: rgba(116, 41, 214, 0.3);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transform: rotate(-45deg);
+  }
+
+.trimeHeader{
+    position: absolute;
+    width: 185.54px;
+    height: 73px;
+    left: 121px;
+    top: 212px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60.8333px;
+    line-height: 73px;
+    text-align: center;
+    letter-spacing: -0.9125px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+ .trainingTime{
+    position: absolute;
+    width: 105px;
+    height: 17px;
+    left: 202px;
+    top: 277px;
+    font-family: "SF Pro Text";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14.5714px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.364286px;
+    color: #FFFFFF;
+  }
+
+.pickOption {
+    position: absolute;
+    width: 259px;
+    height: 26px;
+    left: 88px;
+    top: 467px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+  }
+    
+#gridContainer{
+    position: absolute;
+    display: flex;
+    bottom: 22.5px;
+    height: 100vh;
+    width: 414px;
+ 
+}
+
+.leftRectangle {
+position: absolute;
+width: 185px;
+height: 155px;
+left: 16px;
+top: 561px;
+background: linear-gradient(180deg, #F9A158 0%, #F16662 100%);
+box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+
+}
+
+.rightRectangle{
+position: absolute;
+width: 185px;
+height: 155px;
+left: 211px;
+top: 561px;
+background: linear-gradient(180deg, #B781E8 0%, #8736DB 100%);
+box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+
+
+.client {
+position: absolute;
+width: 78px;
+height: 38px;
+left: 12px;
+top: 32px;
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.3px;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+
+.clientImg{
+position: absolute;
+width: 84.82px;
+height: 168.57px;
+left: 100px;
+top: -25.5px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.trainer {
+    position: absolute;
+    width: 65px;
+    height: 38px;
+    top:32px;
+    right: 16px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.trainerImg{
+position: absolute;
+width: 130.32px;
+height: 169.26px;
+left: -12px;
+top:-22.5px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.line{
+position: absolute;
+width: 382px;
+height: 3px;
+left: 16px;
+top: 738.5px;
+border: 3px solid rgba(199, 162, 237, 0.5);
+margin-bottom: 22.5px;
+}
+
+
+#loginContainer{
+    position: absolute;
+    bottom: 28.5px;
+    height: 100vh;
+    width: 414px;
+}
+
+.loginP{
+position: absolute;
+left: 141px;
+top: 767px;
+width: 132px;
+height: 17px;
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+letter-spacing: 0.092px;
+color: #FFFFFF;
+}
+
+.loginBtn {
+position: absolute;
+width: 121px;
+height: 39px;
+left: 146px;
+top: 830px;
+background: #C7A2ED;
+color: #6622D6, 100 ; 
+border-radius: 30px;
+outline: 0;
+z-index: 5;
+
+}
+
+.lineTwo{
+    position: absolute;
+    width: 134px;
+    height: 5px;
+    top:900px ;
+    left: calc(50% - 134px/2);
+    background: #B371F0;
+    border-radius: 100px;
+    z-index: 200;
+}
+.wave {
+  width: 414px;
+  
+}
+
+.waveOne {
+  position: absolute;
+  width: 150%;
+  height: 88.96px;
+  left: -100px;
+  top: 830px;
+  z-index: 100;
+  
+  }
+  
+  .waveTwo{
+    position: absolute;
+  width: 503.78px;
+  /*height: 89.46px;*/
+  left: -89.78px;
+  top: 810.54px;
+  
+  }
+
+
+.waveThree{
+  position: absolute;
+  width: 503.78px;
+ 
+  top: 836px;
+  }

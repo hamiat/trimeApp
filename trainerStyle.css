@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -149,7 +150,7 @@ ul li {
   place-self: center;
 }
 
-.hamburgerMenu ul li {
+.hamburgerMenu ul li  {
   height: 53px;
   display: flex;
   align-items: center;
@@ -161,6 +162,7 @@ ul li {
   font-weight: 600;
   font-size: 14px;
 }
+
 
 .hamburgerMenu ul img {
   margin-right: 37px;

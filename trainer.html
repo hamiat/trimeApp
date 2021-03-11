@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trime App</title>
+    <script
+      src="https://kit.fontawesome.com/3f78275697.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="trainerStyle.css" />
+  </head>
+
+  <body class="grid">
+    <img id="topEllipse" src="/assets/topEllipse.svg" alt="" />
+    <header class="grid">
+      <nav>
+        <ul class="navBar">
+          <li>9.41</li>
+          <li class="statusBarIcons">
+            <img
+              src="/assets/MobileSignal.svg"
+              alt="Mobile network signal icon"
+            />
+          </li>
+          <li><img src="/assets/Wifi.svg" alt="WiFi icon" /></li>
+          <li><img src="/assets/Battery.svg" alt="Battery icon" /></li>
+        </ul>
+      </nav>
+    </header>
+
+    <img
+      id="hamMenuIcon"
+      class="hamburgerMenuIcon"
+      src="/assets/hamburgerMenuIcon.svg"
+      alt="Hamburger Menu Icon"
+    />
+    <section id="hamMenu" class="hamburgerMenu">
+      <img class="topHamMenuColorShapes" src="/assets/colorShapes.svg" alt="" />
+      <img
+        class="notificationIcon"
+        src="/assets/Notification.svg"
+        alt="Notification bell icon"
+      />
+      <div class="trainerProfileHamMenu">
+        <img src="/assets/profilePic.png" alt="Profile Picture icon" />
+        <div class="trainerNameHamMenu">
+          <p id="trainerName">Johann Vilsson</p>
+          <p id="trainerUsername">Jojo_vilmuscules</p>
+        </div>
+      </div>
+      <ul>
+        <li>
+            <img src="/assets/clientsIcon.svg" alt="Persons icon" />
+            <a href="/myClients.html">Clients list</a>
+        </li>
+        <li>
+          <img src="/assets/Keyboard.svg" alt="keyboard icon" />
+          <p>Programs</p>
+        </li>
+        <li>
+          <img src="/assets/BarbellTrainer.svg" alt="Barbell icon" />
+          <p>Exercises</p>
+        </li>
+        <li>
+          <img src="/assets/ForkKnife.svg" alt="Fork and knife icon" />
+          <p>Nutrition</p>
+        </li>
+        <li>
+          <img src="/assets/ChatsCircle.svg" alt="Chat bubble icon" />
+          <p>Chat</p>
+        </li>
+        <li>
+          <img src="/assets/CalendarTrainer.svg" alt="Calender icon" />
+          <p>My Calender</p>
+        </li>
+      </ul>
+      <img
+        class="trimeTextLogoHamMenu"
+        src="/assets/trimeTextLogo.svg"
+        alt="Trime title logo"
+      />
+      <div class="linkHamMenu">
+        <p>Payments</p>
+        <p>Settings</p>
+        <p>Trime Blog</p>
+        <button>Log Out</button>
+      </div>
+    </section>
+
+    <main class="grid" id="mainBody">
+      <div class="nameTitle">
+        <img src="/assets/profilePic.png" alt="Profile icon" />
+        <h1>Hey Johann!</h1>
+      </div>
+      <p id="seeBookedSessions">A GLANCE AT YOUR BOOKED SESSIONS</p>
+      <div id="bookedSessionsDates">
+        <img src="/assets/dates.svg" alt="Weeks days" />
+      </div>
+      <img
+        id="workoutSession"
+        src="/assets/workoutSession.svg"
+        alt="Preview of a booked workout section"
+      />
+      <img
+        id="consultationSession"
+        src="/assets/consultationSession.svg"
+        alt="Preview of a booked consultation section"
+      />
+      <button>View all bookings</button>
+      <div id="newBookings">
+        <p id="seeNewBookings">NEW BOOKINGS</p>
+        <img src="/assets/newBookings.svg" alt="Preview of new bookings" />
+      </div>
+    </main>
+
+    <footer class="grid" id="footerBody">
+      <img class="footerShapes" src="/assets/footerShapes.svg" alt="" />
+      <div class="footerIcons">
+        <img id="myProfile" src="/assets/Usertrainer.svg" alt="Profile" />
+        <a href="/homePage.html"><img id="footerHomeBtn" src="/assets/footerHomeBtn.svg" alt="Home" /></a>
+        <img
+          id="myPrograms"
+          src="/assets/footerBarbell.svg"
+          alt="My Programs"
+        />
+      </div>
+    </footer>
+
+    <script src="trainerScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+   
+    --lightPurple: #AD45D3;
+    --darkPurple: #6622D6;
+
+  }
+  @font-face {
+    font-family: "SF-Pro";
+    src: url(/assets/FontsFree-Net-SFProText-Regular.ttf);
+    src: url(/assets/FontsFree-Net-SFProDisplay-Regular.ttf);
+    src: url(/assets/FontsFree-Net-SFProDisplay-Bold.ttf);
+    src: url(/assets/FontsFree-Net-SFProDisplay-Black.ttf);
+    
+  }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover{
+  opacity: 0.4;
+}
+
+  button {
+    border-style: none;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    outline: 0;
+  }
+  button:hover{
+   opacity: 0.4;
+  }
+
+  main{
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       
+  }
+
+  .circleC{
+    position: relative;
+    width: 414px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--lightPurple) 0%, var(--darkPurple) 84.19%);
+    overflow-x: hidden;
+  
+  }
+
+  .outerC{
+    position: absolute;
+    height: 530px;
+    width: 529px;
+    left: -59px;
+    top: -16px;
+    background: linear-gradient(180deg, rgba(173, 76, 214, 0.7) 0%, rgba(106, 36, 214, 0.7) 100%);
+    border-radius: 100%;
+  }
+
+  .middleC{
+    position: absolute;
+    height: 450px;
+    width: 449px;
+    left: -19px;
+    top: 24px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #AB53D9 0%, #9743DA 51.04%, #8333DB 100%);
+ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .innerC {
+    position: absolute;
+    height: 379px;
+    width: 377px;
+    left: 17px;
+    top: 59px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #A646D5 0%, #8938DB 41.24%, #802FD5 73.23%, #9531E9 100%);
+  }
+
+  .rect{
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    left: 75px;
+    top: 120px;
+    background: rgba(116, 41, 214, 0.3);
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transform: rotate(-45deg);
+  }
+
+  .trimeHeader{
+    position: absolute;
+    width: 185.54px;
+    height: 73px;
+    left: 121px;
+    top: 212px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60.8333px;
+    line-height: 73px;
+    text-align: center;
+    letter-spacing: -0.9125px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+ .trainingTime{
+    position: absolute;
+    width: 105px;
+    height: 17px;
+    left: 202px;
+    top: 277px;
+    font-family: "SF Pro Text";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14.5714px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.364286px;
+    color: #FFFFFF;
+  }
+
+  /**** LOGIN FIELD**/ 
+
+ #loginField{
+     position: absolute;
+     width: 414px;
+     right: -40px;
+     top: 565px;
+    
+ }
+
+input {
+    width: 338px;
+    height: 60px;
+    border:none;
+    box-shadow: none;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #802ED5 0%, #8131D5 100%);
+    border: 0.3px solid #A367E3;
+    font-family: "Salsa";
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    
+}
+
+input::placeholder{
+    color: white;
+}
+
+input:focus,
+input:valid {
+    outline:0;
+}
+
+
+.inputLogin
+{
+    margin-bottom: 13px;
+   
+   
+}
+
+.inputPassword
+{
+    margin-bottom: 13px;
+}
+
+.inputBtn {
+position: absolute;
+width: 338px;
+height: 60px;
+top: 148px;
+left:0;
+background: #C7A2ED;
+color: #6622D6, 100 ; 
+border-radius: 30px;
+color: #fff;
+font-family: "SF Pro Display";
+font-weight: 700;
+}
+
+.inputEllipse {
+position: absolute;
+width: 60px;
+height: 60px;
+left: 0;
+border-radius: 100%;
+background: #B781E8;
+}
+
+.user {
+    position:absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.lock{
+    position:absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.passwordP{
+position: absolute;
+top: 228px;
+left: 122px;
+bottom:-18px ;
+width: 115px;
+height: 17px;
+font-family: "Salsa";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+.line{
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  top:900px ;
+  left: calc(50% - 134px/2);
+  background: #B371F0;
+  border-radius: 100px;
+  z-index: 200;
+}
+
+
+.wave {
+width: 414px;
+
+}
+
+.waveOne {
+position: absolute;
+width: 150%;
+height: 88.96px;
+left: -100px;
+top: 830px;
+z-index: 100;
+
+}
+
+.waveTwo{
+  position: absolute;
+width: 503.78px;
+/*height: 89.46px;*/
+left: -89.78px;
+top: 810.54px;
+
+}
+
+
+.waveThree{
+position: absolute;
+width: 503.78px;
+
+top: 836px;
+}

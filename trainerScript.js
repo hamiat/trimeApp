@@ -3,6 +3,8 @@ let hamMenuBtn = document.getElementById("hamMenuIcon");
 let mainBody = document.getElementById("mainBody");
 let footerBody = document.getElementById("footerBody");
 
+let clientButton = document.getElementById("")
+
 hamMenuBtn.addEventListener("click", expandMenu);
 
 function expandMenu() {

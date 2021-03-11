@@ -1,0 +1,136 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+@font-face {
+  font-family: "SF-Pro";
+  src: url(/fonts/FontsFree-Net-SFProText-Regular.ttf);
+  src: url(/fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+  src: url(/fonts/FontsFree-Net-SFProText-Bold.ttf);
+  src: url(/fonts/FontsFree-Net-SFProDisplay-Black.ttf);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+
+main{
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: 1/span 1;
+      grid-row: 1;
+      background: linear-gradient(180deg, #FFFFFF 0%, #C7B2E9 100%);
+      overflow: hidden;
+}
+
+nav{
+  height: 78px;
+  background-color: white;
+  position: absolute;
+  width: 414px;
+  left: 0px;
+  top: 13px;
+ /*  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25)); */
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+}
+
+
+.container{
+    position: relative;
+    width :414px;
+    height: 100%;
+
+}
+
+input{
+  position: absolute;
+  width: 397px;
+  height: 44px;
+  left: 8px;
+  top: 105px;
+  border-style: none;
+  border-radius: 5px;
+  border: 0.5px solid #3E0080;
+
+}
+
+.smallCircle{
+position: absolute;
+border-radius: 100%;
+width: 297px;
+height: 298px;
+left: -100px;
+top: 96px;
+background: linear-gradient(180deg, rgba(250, 244, 253, 0.5) 0%, rgba(248, 154, 89, 0.08) 51.04%, rgba(254, 253, 255, 0.4) 100%);
+}
+
+.bigCircle{
+position: absolute;
+width: 490px;
+height: 492px;
+left: 117px;
+top: 245px;
+border-radius: 100%;
+background: linear-gradient(180deg, rgba(250, 244, 253, 0.5) 0%, rgba(248, 154, 89, 0.08) 51.04%, rgba(254, 253, 255, 0.4) 100%);
+}
+
+.clientContainer{
+  position: absolute;
+  width: 397px;
+  height: 335px;
+  left: 8px;
+  right:8px;
+  top: 177px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+/*.clientBoxes {
+  width: 397px;
+  height: 80px;
+  text-align: center;
+  background-color: #F6F3FC;
+  z-index: 2;
+}*/
+
+footer{
+width: 414px;
+height: 90px;
+background: #3E0080;
+box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.25);
+grid-column: 1/span 1;
+grid-row: 2;
+place-self: center;
+margin-top: -93px;
+z-index: 5;
+}
+
+.icon{
+position: absolute;
+top: 115px;
+height: 24px;
+width: 24px;
+left: 23px;
+z-index: 2;
+}
+
+input::placeholder{
+padding-left: 50px;
+font-family: SF Pro Text;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+}
+

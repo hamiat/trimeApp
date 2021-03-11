@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: "SF-Pro";
+  src: url(/assets/FontsFree-Net-SFProText-Regular.ttf);
+  src: url(/assets/FontsFree-Net-SFProText-Bold.ttf);
+  src: url(/assets/FontsFree-Net-SFProDisplay-Regular.ttf);
+  src: url(/assets/FontsFree-Net-SFProDisplay-Bold.ttf);
+  src: url(/assets/FontsFree-Net-SFProDisplay-Black.ttf);
+  
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+  main{
+      position: relative;
+      height: 100vh;
+      grid-column: 1/ span 1;
+      grid-row: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      place-self: center;
+       
+  }
+
+  a{
+    text-decoration: none;
+    color:#fff;
+  }
+  
+    button 
+    {
+        border-style: none;
+        cursor: pointer;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        outline: 0;
+        text-decoration: none;
+        z-index: 2;
+      }
+    button:hover,
+    a:hover{
+     opacity: 0.4;
+    }
+
+    .bodyGrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+   
+   header {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    place-self: center;
+  }
+  
+  nav {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    height: 44px;
+    align-items: center;
+    margin: 0 15px;
+  }
+  
+  ul li {
+    margin: 0 5px;
+    font-family: Sf-Pro;
+    font-weight: 600;
+  }
+  
+  .statusBarIcons {
+    margin-left: auto;
+  }
+
+  #clientFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+  }
+
+  #clientFlex p {
+    color: #3E0080;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+  
+  }
+ 
+/*
+  .hamburgerMenuIcon {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    cursor: pointer;
+    float:right;
+    padding-right: 10px;
+  }
+  */
+
+  #container
+  {
+    position: relative;
+    width :414px;
+    height: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #C7B2E9 100%);
+    overflow-x: hidden;
+    
+  
+  }
+   /**Background Circle Styling**/
+  .firstBgCircle{
+    position: absolute;
+    width: 297px;
+    height: 298px;
+    left: -100px;
+    top: 96px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(250, 244, 253, 0.5) 0%, rgba(248, 154, 89, 0.08) 51.04%, rgba(254, 253, 255, 0.4) 100%);
+  }
+
+  .secondBgCircle{
+    position: absolute;
+    width: 490px;
+    height: 492px;
+    left: 117px;
+    top: 245px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(250, 244, 253, 0.5) 0%, rgba(248, 154, 89, 0.08) 51.04%, rgba(254, 253, 255, 0.4) 100%);
+  z-index: 1;
+  }
+
+  .cardContainer {
+    position: absolute;
+    margin-top:4px;
+    width: 397px;
+    height: 517px;
+    left: 8px;
+    top: 78px;
+    background: #F6F3FC;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 2;
+   
+  }
+
+  h2 {
+    position: absolute;
+    width: 120px;
+    height: 22px;
+    left: 31px;
+    top: 30px;
+    font-family: "SF Pro text";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color:#3E0080;
+  }
+
+  .check {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 155px;
+    top:35px;
+  }
+
+  .verified {
+    position: absolute;
+    width: 80px;
+    height: 12px;
+    left: 175px;
+    top: 37px;
+    font-family: "SF Pro Text";
+    font-weight: normal;
+    font-size: 10px;
+    color:#979797;;
+  }
+
+  .trimerSince{ 
+    position: absolute;
+    width: 135px;
+    height: 14px;
+    left: 32px;
+    top: 57px;
+    font-family: "SF Pro Text";
+    font-weight: normal;
+    font-size: 12px;
+    color: #979797;
+  }
+ 
+
+  .ovalProfile{
+    position: absolute;
+    left: 326px;
+    top: 30px;
+   
+  }
+
+  .edit{
+    position: absolute;
+    left: 325px;
+    top: 96px;
+    font-family:"Inter", sans-serif;;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #3E0080;
+  }
+
+  #clientInfo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    width: 250px;
+    height: 517px;
+    left: 32px;
+    top: 95px;
+  }
+
+  h1 {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 21.5px;
+  }
+
+  .clientInfo >p {
+    color: #979797;
+    font-family: "SF Pro Text";
+    font-weight: normal;
+
+  }
+
+#goal {
+  display: grid;
+  grid-template-columns: 80px 100px 80px 100px;
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 9.7px;
+
+ 
+}
+
+.goals {
+  border-radius: 22px;
+  background-color: #3E0080;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18.32px
+}
+
+.strength {
+  width: 74.19px;
+}
+.gain {
+  width: 75.83px;
+}
+
+.improve{
+  width: 94px;
+}
+
+.healthy {
+  width: 90.63px;
+}
+
+h3{
+  position: absolute;
+  left: 27px;
+  top: 175px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E0080;
+}
+
+#about {
+  position: absolute;
+  left: 25px;
+  top: 260px;
+}
+
+.about {
+  color: #3E0080;
+  padding-bottom: 16px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+  .clientFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    top: 455px;
+    width: 100%;
+    height: 70px;
+    background: #48157B;
+    border-radius: 0px 0px 10px 10px;
+    color: #FFFFFF;
+  }
+
+  .icons {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+.icons p{
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+}
+
+.followers >p{
+padding-top: 6px;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: 119px 119px 119px;
+  grid-gap: 10px;
+  position: absolute;
+  top: 625px;
+  width: 100%;
+  height: 164px;
+  margin: 0 20px 0 20px;
+}
+
+.gridContainer > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 119px;
+  height: 164px;
+  background: #F6F3FC;
+  border-radius: 4px;
+}
+
+.gridContainer > div > p{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.gridContainer > div:hover{
+opacity: 0.4;
+cursor: pointer;
+}
+
+.one >p{
+  margin-top:21px ;
+}
+
+.two >p {
+  
+  margin-top:11px ;
+}
+
+.three{
+  z-index:2;
+}
+
+
+
+
+/**Footer Section**/
+  footer {
+    position: absolute;
+    width: 414px;
+    height: 80px;
+    left: 0px;
+    top: 816px;
+    background: #3E0080;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .firstWave{
+   position: absolute;
+   left: -100px;
+   bottom: 0px;
+   width: 600px;
+   height: 89px;
+  }
+
+  .secondWave{
+    position: absolute;
+    width: 503.78px;
+    height: 88.96px;
+    right: 0px;
+    bottom: 0;
+  }
+
+  .thirdWave{
+   position: absolute;
+   width: 555.78px;
+   height: 100px;
+   left: -26px;
+   bottom: 0px;
+  }
+
+
+  .footerIcons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 80px;
+  }
+
+  .profile {
+    position: absolute;
+    left: 74px;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+  }
+
+  .home {
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    left: 176px;
+    bottom: 37px;
+  }
+
+  .barebell {
+    position: absolute;
+    left: 74.64%;
+    right: 13.77%;
+    top: 15px;
+    bottom: 0;
+  }
+
+#icons >p{
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.homeParagraph{
+position: absolute;
+left: 22px;
+right: 0;
+top: 73px;
+}
+
+.barebellParagraph {
+  position: absolute;
+  right: -40px;
+  top: 43px;
+  width: 100px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  
+}
+
