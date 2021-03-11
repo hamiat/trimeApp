@@ -78,10 +78,10 @@ ul li {
 }
 
 .hamburgerMenuIcon {
-  grid-column: 1 / span 8;
+  grid-column: 8 / span 1;
   grid-row: 2;
   cursor: pointer;
-  place-self: flex-end;
+ 
 }
 
 /*collapsable hamburger menu */
